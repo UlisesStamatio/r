@@ -119,4 +119,4 @@ View(datos)
 #Variable: age
 #observación: Luis Antonio Perez 2002-04-30
 #observational unit: corredor
-
+#Data set: Colección de valores donde cada uno perteneces a una variable a una observación
