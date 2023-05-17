@@ -100,4 +100,23 @@ class(9.0)
 class(c(1,2,3,4,5))
 class(c("1","3",12))
 
+#Registros = Observaciones
+#Columna = Variables
+#Seleccion de datos - Preparación o 
+#Preprocesamiento - Transformación - Minería de datos - Análisis y demostración
+head(maraton)
+head(maraton,3)
+tail(maraton,10)
 
+install.packages("RWeka")
+library("RWeka")
+datos <- read.arff("C:\\Users\\CC7\\Downloads\\dasdsa\\CEE_DATA.arff")
+View(datos)
+
+#Una columna de un data frace se conoce como variable
+#Un registro se conoce como observación
+#Cada data frame corresponde a un solo tipo de obserational unit - Variables que describen una unidad
+#Variable: age
+#observación: Luis Antonio Perez 2002-04-30
+#observational unit: corredor
+#Data set: Colección de valores donde cada uno perteneces a una variable a una observación
