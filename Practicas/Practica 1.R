@@ -120,3 +120,54 @@ View(datos)
 #observación: Luis Antonio Perez 2002-04-30
 #observational unit: corredor
 #Data set: Colección de valores donde cada uno perteneces a una variable a una observación
+
+X==3 & x < 6
+##Tipos de dato
+#carater,numero,Logico,complejos,raw
+nombre <-"Hugo"
+edad <- 45L
+cantidad <- 4
+bandera <- TRUE #T o F, 1 o 0
+raiz <- 3 +5i
+binario <- raw(2)
+typeof(nombre)
+
+func1 <- function(x,arithmetic=TRUE){
+  resultado <- 0
+  if(is.character(x) | is.logical(x)){
+    print("el argumento no es numérico")
+  }else{
+    if(arithmetic==TRUE){
+      resultado <- sum(x) / length(x)
+    }else{
+      resultado <- prod(x) ^ (1/length(x)) 
+    }
+  }
+  return(resultado)
+}
+
+resultado <- func1(c(1,2,3),TRUE)
+
+D<-1:5
+print(D)
+
+e <- seq(1,5, by=1.5)
+print(e)
+
+f <- rep(2:4,times=4)
+print(f)
+
+g <- scan()
+g
+vector <- c(1,2,3)
+names(vector) <- c("col1","col2","col3")
+vector
+
+inventario <- c("manzana"=30,"platano"=9,"sandia"=6)
+inventario
+
+inventario2 <- c(inventario, "pera"=10)
+inventario2
+
+inventario3 <- union(inventario,c("pera"=10))
+inventario3
